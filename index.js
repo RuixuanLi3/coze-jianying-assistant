@@ -28,14 +28,13 @@ app.get('/openapi.json', (req, res) => {
   const openapi = {
     "openapi": "3.0.0",
     "info": {
-      "title": "剪映小助手 API",
-      "description": "视频编辑插件API，支持创建草稿、添加多媒体内容等功能",
+      "title": "剪映小助手",
+      "description": "视频编辑插件API",
       "version": "1.0.0"
     },
     "servers": [
       {
-        "url": "https://coze-jianying-assistant-pj7znibmi.vercel.app/api",
-        "description": "Production server"
+        "url": "https://coze-jianying-assistant-pj7znibmi.vercel.app/api"
       }
     ],
     "paths": {
@@ -76,7 +75,17 @@ app.get('/openapi.json', (req, res) => {
                     "type": "object",
                     "properties": {
                       "success": { "type": "boolean" },
-                      "data": { "type": "object" },
+                      "data": {
+                        "type": "object",
+                        "properties": {
+                          "ids": {
+                            "type": "array",
+                            "items": { "type": "string" }
+                          },
+                          "height": { "type": "integer" },
+                          "width": { "type": "integer" }
+                        }
+                      },
                       "message": { "type": "string" }
                     }
                   }
