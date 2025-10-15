@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "剪映小助手",
+  "name_for_model": "jianying_assistant",
+  "description_for_human": "视频编辑插件，支持创建草稿、添加图片、音频、视频、字幕、特效等功能",
+  "description_for_model": "Video editing plugin that supports creating drafts, adding images, audios, videos, captions, and effects with timeline management.",
+  "api": {
+    "type": "openapi",
+    "url": "https://coze-jianying-assistant-pj7znibmi.vercel.app/openapi.json"
+  },
+  "auth": {
+    "type": "none"
+  }
+}
