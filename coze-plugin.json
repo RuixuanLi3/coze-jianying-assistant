@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "剪映小助手",
+  "name_for_model": "jianying_assistant",
+  "description_for_human": "一个强大的视频编辑插件，支持创建草稿、添加图片、音频、视频、字幕、特效等功能",
+  "description_for_model": "This plugin provides video editing capabilities including creating drafts, adding images, audios, videos, captions, and effects. It supports timeline management and various transformation parameters.",
+  "api": {
+    "type": "openapi",
+    "url": "https://your-domain.com/openapi.json"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://your-domain.com/logo.png",
+  "contact_email": "support@your-domain.com",
+  "legal_info_url": "https://your-domain.com/legal"
+}
