@@ -23,6 +23,11 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: '剪映小助手插件运行正常' });
 });
 
+// OpenAPI规范
+app.get('/openapi.json', (req, res) => {
+  res.sendFile(require('path').join(__dirname, 'openapi.json'));
+});
+
 // 根路径
 app.get('/', (req, res) => {
   res.json({
