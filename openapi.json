@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://your-domain.com/api",
+      "url": "https://coze-jianying-assistant-pj7znibmi.vercel.app/api",
       "description": "Production server"
     }
   ],
